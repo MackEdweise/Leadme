@@ -60,10 +60,17 @@ p {
 }
 
 .icon{
-
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+.watch{
+  height: 100vh;
+}
+
+.top{
+  height:100vh;
 }
 
 .navbar-default {
