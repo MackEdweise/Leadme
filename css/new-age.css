@@ -409,6 +409,10 @@ footer ul li a.active {
   color: #004bff;
 }
 
+.space{
+  margin-top: 40px;
+}
+
 .center{
   margin-left: auto;
   margin-right: auto;
