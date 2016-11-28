@@ -147,13 +147,13 @@
                     <div class="col-md-6 space">
                         <p>Download the mobile app for free.</p>
                         <div class="badges">
-                            <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                            <a class="badge-link" data-target="appModal" data-toggle="modal"><img src="img/google-play-badge.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-6 space">
                         <p>Interested in the business application?</p>
                         <div class="badges">
-                            <a class="badge-link" href="mailto:leadme3@outlook.com"><img src="img/demo-badge.svg" alt=""></a>
+                            <a class="badge-link" href="mailto:luc.gilmour@leadme.ca"><img src="img/demo-badge.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -205,6 +205,61 @@
             </div>
         </div>
     </section>
+
+    <div id="appModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Free App</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4><b>It's on the way!</b></h4>
+                            <p>Our app is not 100% finished. If you would like to be notified when it's ready, you
+                            can enter your email bellow. Thank you for you interest.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <form id="signUp" method="post" action="http://calm-thicket-64429.herokuapp.com/signup">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4><b>Name</b></h4>
+                                <input required id="name" name="name" type="text" class="form-control" placeholder="John Smith">
+                            </div>
+                            <div class="col-sm-12">
+                                <h4><b>Email</b></h4>
+                                <input required id="email" name="email" type="email" class="form-control" placeholder="jsmith@domain.com">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-4 col-sm-offset-4">
+                                <h4><b>Interested in other news?</b></h4>
+                                <p>If you like, we can keep you up to date on the development of our business and solution.</p>
+                                <div class="radio text-center">
+                                    <div class="row">
+                                        <input id="yes" name="news" checked="checked" type="radio" value="yes"><label class="opt">yes</label>
+                                    </div>
+                                </div>
+                                <div class="radio text-center">
+                                    <div class="row">
+                                        <input id="no" name="news" type="radio" value="no"><label class="opt">no</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="modal-footer">
+                            <button type="submit" id="save-button" class="btn btn-danger">Submit</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
