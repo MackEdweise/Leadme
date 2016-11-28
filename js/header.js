@@ -15,4 +15,5 @@ $(document).ready(function() {
             $('.watch').show();
         }
     });
+    $("[data-toggle='modal']").modal('hide');
 });
