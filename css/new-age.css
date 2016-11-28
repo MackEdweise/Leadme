@@ -73,6 +73,10 @@ p {
   height:100vh;
 }
 
+.opt{
+  width: 100px;
+}
+
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);

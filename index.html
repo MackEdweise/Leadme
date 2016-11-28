@@ -147,7 +147,7 @@
                     <div class="col-md-6 space">
                         <p>Download the mobile app for free.</p>
                         <div class="badges">
-                            <button class="badge-link" data-target="appModal" data-toggle="modal"><img src="img/google-play-badge.svg" alt=""></button>
+                            <button class="badge-link" data-target="#appModal" data-toggle="modal"><img src="img/google-play-badge.svg" alt=""></button>
                         </div>
                     </div>
                     <div class="col-md-6 space">
@@ -222,7 +222,7 @@
                         </div>
                     </div>
                     <br>
-                    <form id="signUp" method="post" action="http://calm-thicket-64429.herokuapp.com/signup">
+                    <form id="signUp" method="post" action="http://calm-thicket-64429.herokuapp.com/website/signup">
                         <div class="row">
                             <div class="col-sm-12">
                                 <h4><b>Name</b></h4>
@@ -235,24 +235,24 @@
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-sm-4 col-sm-offset-4">
+                            <div class="col-sm-12">
                                 <h4><b>Interested in other news?</b></h4>
                                 <p>If you like, we can keep you up to date on the development of our business and solution.</p>
                                 <div class="radio text-center">
                                     <div class="row">
-                                        <input id="yes" name="news" checked="checked" type="radio" value="yes"><label class="opt">yes</label>
+                                        <input id="yes" name="news" checked="checked" type="radio" value="yes"><label class="opt">alright</label>
                                     </div>
                                 </div>
                                 <div class="radio text-center">
                                     <div class="row">
-                                        <input id="no" name="news" type="radio" value="no"><label class="opt">no</label>
+                                        <input id="no" name="news" type="radio" value="no"><label class="opt">no thanks</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <br>
                         <div class="modal-footer">
-                            <button type="submit" id="save-button" class="btn btn-danger">Submit</button>
+                            <button type="submit" id="save-button" class="btn btn-info">Submit</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </form>
