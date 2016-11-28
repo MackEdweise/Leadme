@@ -73,7 +73,7 @@ p {
   height:100vh;
 }
 
-#app-button{
+.app-button{
   background-color: transparent;
   border-color: transparent;
 }

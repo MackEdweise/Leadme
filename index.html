@@ -147,13 +147,13 @@
                     <div class="col-md-6 space">
                         <p>Download the mobile app for free.</p>
                         <div class="badges">
-                            <button id="app-button" class="badge-link" data-target="#appModal" data-toggle="modal"><img src="img/google-play-badge.svg" alt=""></button>
+                            <button class="badge-link app-button" data-target="#appModal" data-toggle="modal"><img src="img/google-play-badge.svg" alt=""></button>
                         </div>
                     </div>
                     <div class="col-md-6 space">
                         <p>Interested in the business application?</p>
                         <div class="badges">
-                            <a class="badge-link" href="mailto:luc.gilmour@leadme.ca"><img src="img/demo-badge.svg" alt=""></a>
+                            <button class="badge-link app-button" data-target="#businessModal" data-toggle="modal"><img src="img/demo-badge.svg" alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -253,6 +253,60 @@
                         <br>
                         <div class="modal-footer">
                             <button type="submit" id="save-button" class="btn btn-info">Submit</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="businessModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Business App</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4><b>Thank you for your interest.</b></h4>
+                            <p>Let us know how we can get in contact with you, and we will follow up shortly.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <form id="signUpBusiness" method="post" action="http://calm-thicket-64429.herokuapp.com/website/signup">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4><b>Name</b></h4>
+                                <input required id="name-business" name="name" type="text" class="form-control" placeholder="John Smith">
+                            </div>
+                            <div class="col-sm-12">
+                                <h4><b>Email</b></h4>
+                                <input required id="email-business" name="email" type="email" class="form-control" placeholder="jsmith@domain.com">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4><b>Interested in other news?</b></h4>
+                                <p>If you like, we can keep you up to date on the development of our business and solution.</p>
+                                <div class="radio text-center">
+                                    <div class="row">
+                                        <input id="yes-business" name="news" checked="checked" type="radio" value="yes"><label class="opt">alright</label>
+                                    </div>
+                                </div>
+                                <div class="radio text-center">
+                                    <div class="row">
+                                        <input id="no-business" name="news" type="radio" value="no"><label class="opt">no thanks</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="modal-footer">
+                            <button type="submit" id="submit-button" class="btn btn-info">Submit</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </form>
