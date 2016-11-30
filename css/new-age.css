@@ -259,6 +259,8 @@ section.download h2 {
 section.download .badges .badge-link {
   display: block;
   margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 section.download .badges .badge-link:last-child {
   margin-bottom: 0;
